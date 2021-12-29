@@ -12,7 +12,7 @@
 * Exercice 11 : Texte responsive
 * Exercice 12 : Loader
 * Exercice 13 : Transition
-* Exercice 14 : Galerie responsive avev Flexbox et Grid
+* Exercice 14 : Galerie responsive avec Flexbox et Grid
 * Exercice 15 : Flex time
 * Exercice 16 : Grid time
 * Exercice 17 : Pseudo éléments
