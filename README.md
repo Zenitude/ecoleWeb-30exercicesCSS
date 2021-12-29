@@ -1,4 +1,4 @@
-# Ecole du Web - [30 Exercices CSS]('https://www.ecole-du-web.net/')
+# Ecole du Web - [30 Exercices CSS](https://www.ecole-du-web.net/)
 * Exercice 1 : Alignement
 * Exercice 2 : NavBar
 * Exercice 3 : Section accueil
