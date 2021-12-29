@@ -1,0 +1,24 @@
+/* Trouvez au moins 3 façons de régler le problème de la fusion des marges. */
+
+    /* #1 */
+
+        .w1 
+        {
+            border-top: 1px solid transparent;
+            /* padding-top: 1px; */
+        }
+
+    /* #2 */
+
+        .w2 
+        {
+            display: flex;
+            /* display: grid; */
+        }
+
+    /* #3 */
+
+        .w3 
+        {
+            overflow: auto;
+        }

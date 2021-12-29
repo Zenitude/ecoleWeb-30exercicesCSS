@@ -1,0 +1,74 @@
+*, ::before, ::after 
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body 
+{
+    height: 100vh;
+    font-family: sans-serif;
+    background: #333;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    overflow-y: hidden;
+}
+
+.caroussel
+{
+    width: 350px;
+    height: 150px;
+    position: relative;
+    background:#f1f1f1;
+    color: #333;
+    font-weight: 600;
+    perspective: 100px;
+    overflow-y: hidden;
+}
+
+.par
+{
+    display: inline-block;
+    text-align: center;
+    line-height: 150px;
+    width: 350px;
+    height: 150px;
+    font-size: 2rem;   
+    animation: caroussel 8s ease-in-out infinite;
+}
+
+@keyframes caroussel
+{
+    0%, 20%
+    {
+        transform: translateY(0);
+    }
+
+    25%, 45%
+    {
+        transform: translateY(-150px);
+    }
+
+    50%, 70%
+    {
+        transform: translateY(-300px);
+    }
+
+    75%, 95%
+    {
+        transform: translateY(-450px);
+    }
+
+    100%
+    {
+        transform: translateY(-600px);
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/exercices.css" />
+    <link media="screen and (max-width: 800px) and (min-width: 500px)" href="">
+    <title>CSS N° 18 : Responsive - Exo 1 (HTML)</title>
+  </head>
+  <body>
+    <div class="retourMenu"><a href="../index.html">Retour à l'index</a></div>
+    <!-- Exercice 1 -->
+    <!-- Comment afficher 3 images différentes en fonction de la largeur d'écran ? -->
+    <!-- L'image qui fait 400 pixels de large en dessous de 500px -->
+    <!-- L'image qui fait 700 pixels de large en dessous de 800px et au dessus de 500px -->
+    <!-- Sinon l'image qui fait 1100px -->
+    <div class="container-exo1">
+      <picture>
+        <source media="(max-width: 500px)" srcset="ressources/waterfall-400.png" sizes="400px">
+        <source media="(min-width: 500px) and (max-width:800px)" srcset="ressources/waterfall-700.png" sizes="700px">
+        <img src="ressources/waterfall-1100.png" alt="cascade">
+      </picture>
+    </div>
+
+
+
+
+    <!-- <img srcset=" ressources/waterfall-400.png 400w,
+                       ressources/waterfall-700.png 700w,
+                       ressources/waterfall-1100.png 1100w"
+              sizes="(max-width: 500px) 400px
+                     (min-width: 500px) and (max-width: 800px) 700px"
+              src="ressources/waterfall-1100.png" alt="cascade"> -->
+
+
+  </body>
+</html>

@@ -1,0 +1,187 @@
+@charset "UTF-8";
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Raleway, Helvetica, sans-serif;
+  background: #f1f1f1;
+  display: grid;
+  grid-template-rows: 800px 450px;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+footer {
+  width: 100%;
+  background: #333;
+  grid-area: 2/1/3/2;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -100px auto 0;
+}
+
+/* Pied de page */
+/* Formulaire */
+form {
+  display: inline-block;
+  padding: 40px 70px 20px;
+  background: #f5a209;
+  margin: 5px;
+  width: 600px;
+}
+form h2 {
+  font-weight: 400;
+  font-size: 2em;
+  margin: 20px 0 30px;
+}
+form label {
+  opacity: 0;
+  display: block;
+}
+form input, form button {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+form button {
+  margin-top: 10px;
+  background: #333;
+  color: #f1f1f1;
+}
+
+/* À propos */
+.apropos {
+  font-size: 1.3em;
+  line-height: 1.5;
+  width: 300px;
+  padding-left: 15px;
+  margin: 100px 0 0;
+}
+.apropos h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* Catégories */
+.categories {
+  font-size: 1.6em;
+  width: 300px;
+  padding: 30px 0 0;
+}
+.categories h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.categories ul {
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+/* Quick Links */
+.quicklinks {
+  font-size: 1.6em;
+  width: 300px;
+  padding: 30px 10px 0;
+}
+.quicklinks h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.quicklinks ul {
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+/* Réseaux sociaux */
+.reseaux {
+  padding: 30px 10px 0;
+  width: 300px;
+}
+.reseaux img {
+  width: 50px;
+  border-radius: 50%;
+  background: #f5a209;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1840px) {
+  body {
+    grid-template-rows: 800px 550px;
+  }
+
+  form {
+    width: 700px;
+  }
+  form input, form button {
+    width: 500px;
+  }
+
+  .apropos, .categories, .quicklinks, .reseaux {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 0 0;
+  }
+
+  .reseaux {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .reseaux img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    grid-template-rows: 800px 900px;
+  }
+
+  form {
+    padding: 30px 70px 5px;
+  }
+  form h2 {
+    margin: 20px 0 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+  .container form {
+    width: 100%;
+  }
+
+  .apropos, .categories, .quicklinks, .reseaux {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

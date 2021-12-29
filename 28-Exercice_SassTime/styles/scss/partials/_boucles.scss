@@ -1,0 +1,8 @@
+@for $i from 1 through 100
+{
+    .b#{$i}
+    {
+        width: $i + 1px;
+        height: $i + 1px;
+    }
+}

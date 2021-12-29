@@ -1,0 +1,149 @@
+*, ::before, ::after 
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+    background: url('../ressources/bricks-wall.jpg');
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1px;
+}
+
+.overlay 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.863);
+}
+
+.card 
+{
+    display: flex;
+    flex-direction: column;
+    background: #222;
+    position: relative;
+    width: 75vmin;
+    margin: 100px auto 0;
+    padding: 50px;
+    border-radius: 22px;
+    /* Bordure carte */
+    box-shadow: 0px 0px 10px 0px rgba(83, 45, 221,1),
+    0px 0px 20px 10px rgba(83, 45, 221,1),
+    inset 0px 0px 5px 1px rgba(83, 45, 221, 1),
+    inset 0px 0px 5px 1px rgba(83, 45, 221, 0.5),
+    inset 0px 0px 5px 1px rgba(83, 45, 221, 1);
+}
+
+.card h1 
+{
+    font-family: Mali, sans-serif;
+    font-size: calc(6vmin + 5px);
+    font-weight: 300;
+    color: #f1f1f1;
+    text-shadow: 0px 0px 8px rgba(83, 45, 221, 1),
+    2px 0px 16px rgba(83, 45, 221, 1),
+    4px 0px 32px rgba(83, 45, 221, 1),
+    0px 0px 16px rgba(83, 45, 221, 1),
+    2px 0px 32px rgba(83, 45, 221, 1),
+    4px 0px 64px rgba(83, 45, 221, 1),
+    0px 0px 32px rgba(83, 45, 221, 1),
+    2px 0px 64px rgba(83, 45, 221, 1),
+    4px 0px 128px rgba(83, 45, 221, 1);
+    animation: clignotementBleue 1s infinite alternate;
+}
+
+.card span 
+{
+    font-family: Raleway, sans-serif;
+    padding-left: 0px;
+    font-size: calc(4vmin + 10px);
+    letter-spacing: 5px;
+    color: #f1f1f1cb;
+    text-shadow: 0px 0px 8px rgba(250,250,250,1),
+    2px 0px 16px rgba(250, 4, 24,1),
+    4px 0px 32px rgba(250, 4, 24,1),
+    0px 0px 16px rgba(250, 4, 24,1),
+    2px 0px 32px rgba(250, 4, 24,1),
+    4px 0px 64px rgba(250, 4, 24,1),
+    0px 0px 32px rgba(250, 4, 24,1),
+    2px 0px 64px rgba(250, 4, 24,1),
+    4px 0px 128px rgba(250, 4, 24,1);
+    animation: clignotementRouge 1s infinite alternate;
+}
+
+.card a
+{
+    color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.card img 
+{
+    position: absolute;
+    bottom: -10vmin;
+    right: -5vmin;
+    width: 25vmin; 
+    filter: drop-shadow(0px 0px 5px rgb(70, 241, 84))
+    drop-shadow(0px 0px 5px rgb(172, 118, 3));
+    animation: clignotementMicro 1s infinite alternate;
+}
+
+@keyframes clignotementRouge
+{
+    2%, 20%, 24%, 27%, 55%, 59%, 100%
+    {
+        text-shadow: 0px 0px 8px rgba(250,250,250,1),
+        2px 0px 16px rgba(250, 4, 24,1),
+        4px 0px 32px rgba(250, 4, 24,1),
+        0px 0px 16px rgba(250, 4, 24,1),
+        2px 0px 32px rgba(250, 4, 24,1),
+        4px 0px 64px rgba(250, 4, 24,1),
+        0px 0px 32px rgba(250, 4, 24,1),
+        2px 0px 64px rgba(250, 4, 24,1),
+        4px 0px 128px rgba(250, 4, 24,1);
+    }
+    22%, 26%, 57%
+    {
+        text-shadow: none;
+    }
+}
+
+@keyframes clignotementBleue
+{
+    0%, 18%, 22%, 25%, 53%, 57%, 100%
+    {
+        text-shadow: 0px 0px 8px rgba(83, 45, 221, 1),
+        2px 0px 16px rgba(83, 45, 221, 1),
+        4px 0px 32px rgba(83, 45, 221, 1),
+        0px 0px 16px rgba(83, 45, 221, 1),
+        2px 0px 32px rgba(83, 45, 221, 1),
+        4px 0px 64px rgba(83, 45, 221, 1),
+        0px 0px 32px rgba(83, 45, 221, 1),
+        2px 0px 64px rgba(83, 45, 221, 1),
+        4px 0px 128px rgba(83, 45, 221, 1);
+    }
+    20%, 24%, 55%
+    {
+        text-shadow: none;
+    }
+}
+
+@keyframes clignotementMicro
+{
+    0%, 9%, 15%, 79%, 83%, 100%
+    {
+        filter: drop-shadow(0px 0px 5px rgb(70, 241, 84))
+        drop-shadow(0px 0px 5px rgb(172, 118, 3));
+    }
+    10%, 14%, 80%, 82%
+    {
+        filter: none;
+    }
+}
+

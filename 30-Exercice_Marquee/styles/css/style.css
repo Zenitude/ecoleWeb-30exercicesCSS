@@ -1,0 +1,37 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: repeating-linear-gradient(135deg, rgba(93, 93, 93, 0.1) 0px, rgba(93, 93, 93, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, white, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #f1f1f1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.marquee {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.txt {
+  flex-shrink: 0;
+  font-size: 150px;
+  animation: marquee 10s linear infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

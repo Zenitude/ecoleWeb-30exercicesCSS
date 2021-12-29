@@ -1,0 +1,105 @@
+*, ::before, ::after 
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body 
+{
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene
+{
+  width: 100px;
+  height: 100px;
+  perspective: 600px;
+}
+
+.cube
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 5s infinite ease-in-out;
+}
+
+.face
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front 
+{ 
+  background: red; 
+  transform: translateZ(50px);
+  opacity: 0.5;
+}
+
+.back 
+{ 
+  background: green; 
+  transform: translateZ(-50px) rotateY(180deg);
+  opacity: 0.5;
+}
+
+.right 
+{ 
+  background: blue; 
+  transform: translateZ(50px) rotateY(270deg); 
+  transform-origin: top right;
+  opacity: 0.5;
+}
+
+.left 
+{ 
+  background: pink; 
+  transform: translateZ(-50px) rotateY(270deg);
+  transform-origin: center left;
+  opacity: 0.5;
+}
+
+.top 
+{ 
+  background: yellow; 
+  transform: translateZ(50px) rotateX(-90deg);
+  transform-origin: top center;
+  opacity: 0.5;
+}
+
+.bottom 
+{ 
+  background: purple; 
+  transform: translateZ(50px) rotateX(90deg) rotateY(180deg);
+  transform-origin: bottom center;
+  opacity: 0.5;
+}
+
+@keyframes spin
+{
+  0% 
+  {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% 
+  {
+    transform: rotateX(540deg) rotateY(540deg);
+  }
+}
+
+
+

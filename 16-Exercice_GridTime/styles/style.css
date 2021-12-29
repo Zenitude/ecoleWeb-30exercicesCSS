@@ -1,0 +1,116 @@
+*, ::before, ::after 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body 
+{
+  font-family: Raleway, sans-serif;
+  background: #222;
+  padding-bottom: 400px;
+}
+
+p 
+{
+  text-align: center;
+  font-size: 25px;
+  color: #f1f1f1;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.box 
+{
+  background: crimson;
+  font-size: 20px;
+  color: #f1f1f1;
+  padding: 10px;
+}
+
+
+/* Grid 1, row = 150px */
+
+.grid1 
+{
+  max-width: 600px;
+  margin: 15px auto 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 10px;
+}
+
+/* Grid 2, row = 200px */
+
+.grid2 
+{
+  max-width: 600px;
+  margin: 15px auto 150px;
+  display: grid;
+  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background: #f1f1f1;
+  padding: 10px;
+}
+
+.grid2 .b1 
+{
+  grid-area: 1 / 1 / 2 / 3 ;
+}
+
+.grid2 .b2 
+{
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.grid2 .b3 
+{
+  grid-area : 2 / 1 / 3 / 2; 
+}
+
+.grid2 .b4 
+{
+  grid-area : 2 / 2 / 3 / 3;
+}
+
+/* Grid 3 , row = 100px, Essayez de nommer les cellules des grilles */
+
+.grid3 
+{
+  max-width: 600px;
+  margin: 15px auto 150px;
+  display: grid;
+  grid-template-columns: [colonne1-start] 1fr [colonne1-end colonne2-start] 1fr [colonne2-end colonne3-start] 1fr [colonne3-end colonne4-start] 1fr [colonne4-end];
+  grid-template-rows: [ligne1-start] 100px [ligne1-end ligne2-start] 100px [ligne2-end ligne3-start] 100px [ligne3-end];
+  grid-gap: 10px;
+  background: #f1f1f1;
+  padding: 10px;
+}
+
+.grid3 .b1 
+{
+  grid-area: ligne1-start / colonne1-start / ligne1-end / colonne2-end;
+}
+
+.grid3 .b2 
+{
+  grid-area: ligne1-start / colonne3-start / ligne1-end / colonne4-end;
+}
+
+.grid3 .b3 
+{
+  grid-area: ligne2-start / colonne1-start / ligne2-end / colonne1-end;
+}
+
+.grid3 .b4 
+{
+  grid-area: ligne2-start / colonne2-start / ligne2-end / colonne4-end;
+}
+
+.grid3 .b5 
+{
+  grid-area: ligne3-start / colonne1-start / ligne3-end / colonne4-end;
+}

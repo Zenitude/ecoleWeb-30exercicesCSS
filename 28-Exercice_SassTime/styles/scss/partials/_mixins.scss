@@ -1,0 +1,9 @@
+@mixin incrementation($pdg,$fz,$mw)
+{
+  display: block;
+  padding: $pdg;
+  font-size: $fz;
+  width: 100%;
+  max-width: $mw;
+  margin: 50px auto;
+}

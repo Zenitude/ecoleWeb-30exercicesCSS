@@ -1,0 +1,82 @@
+@media screen and (max-width:1840px)
+{
+    body 
+    {
+        grid-template-rows: 800px 550px;
+    }
+
+    form 
+    {
+        width: 700px;
+
+        input, button
+        {
+            width: 500px;
+
+        }
+    }
+
+    .apropos, .categories, .quicklinks, .reseaux
+    {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 0 0;
+    }
+
+    .reseaux
+    {
+        flex-direction: row;
+        justify-content: flex-start;
+
+        img 
+        {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px)
+{
+    body 
+    {
+        grid-template-rows: 800px 900px;
+    }
+
+    form 
+    {
+        padding: 30px 70px 5px;
+
+        h2
+        {
+            margin: 20px 0 15px;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .container
+    {
+        width: 100%;
+
+        form 
+        {
+            width: 100%;
+        }
+    }
+
+    .apropos, .categories, .quicklinks, .reseaux
+    {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+

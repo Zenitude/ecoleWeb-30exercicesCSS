@@ -1,0 +1,97 @@
+@import 'partials/global';
+@import 'partials/variables';
+@import 'partials/extensions';
+@import 'partials/mixins';
+
+// 1. Créer une palette de 5 variables qui représentent des nuances de bleu en hexadécimal
+
+// 2. Utiliez le "nesting" de SASS afin d'imbriquer les sélecteurs suivants
+
+.container 
+{
+  background: $blue3;
+  color: $blanc1;
+  padding: 40px;
+  border-radius: 5px;
+  max-width: 900px;
+  margin: 20px auto 0;
+
+  h1
+  {
+    font-size: 40px;
+  }
+
+  button 
+  {
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover
+    {
+      background: $blue5;
+      color: $blanc1;
+    }
+  }
+}
+
+// 3. Partagez les trois propriétés suivantes avec les h2, h3 & h4.
+// Le résultat dans le style.css devrait ressembler à ceci :
+// h2, h3, h4 {
+//     font-size: 45px;
+//     text-align: center;
+//     padding: 12px 0;
+//   }
+
+h4 
+{
+  color: $blue5;
+  @extend %h2;
+}
+
+h3 
+{
+  color: lightgreen;
+  @extend %h2;
+}
+
+h2 
+{
+  color: crimson;
+  @extend %h2;
+}
+
+// 4. Créez un mixin avec des paramètres pour éviter les répétitions.
+// Les sélecteurs ne doivent pas avoir de propriétés propres, tout doit être compris dans le mixin et ses paramètres.
+
+.inp-large 
+{
+  @include incrementation(24px,20px,800px);
+}
+
+.inp-small 
+{
+  @include incrementation(16px,14px,250px);
+}
+
+// 5. Utilisez une boucle pour ajouter 1px de hauteur et de largeur aux 100 blocks de manière incrémentale (b1,b2,b3 etc ...).
+// 1px 1px
+// 2px 2px
+
+.blocks-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block {
+  border: 10px solid rgb(43, 220, 20);
+  background: #000;
+  margin: 20px;
+}
+
+@import 'partials/boucles';
+

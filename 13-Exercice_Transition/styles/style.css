@@ -1,0 +1,50 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  height: 100vh;
+  background: #f1f1f1;
+  color: #222;
+}
+
+
+/* Utilisez les transitions CSS pour créer cette séquence d'animations */
+/* 
+Propriétés à animer pour arriver à ce résultat : 
+width: 50 - 200px
+height: 50 - 100px
+transform: rotate(720deg)
+
+grandis vers le bas
+s'élargie vers gauche et droite
+fait un 360 dans le sens des aiguiles d'une montre
+rétricis du bas
+s'amégris
+fait un 360 dans dans le sens inverse des aiguilles d'une montre
+*/
+
+.box 
+{
+  margin: 100px auto;
+  width: 50px;
+  height: 50px;
+  background-color: salmon;
+  cursor: pointer;
+  transition : height 0.5s 0s, width 0.5s 1s, transform 0.5s 2s;
+}
+
+.box:hover 
+{
+  height: 200px;
+  width: 200px;
+  transform: rotate(720deg);
+}
+
+
+

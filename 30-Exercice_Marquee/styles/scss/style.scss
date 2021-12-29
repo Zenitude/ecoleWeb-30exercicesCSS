@@ -1,0 +1,16 @@
+@import 'partials/general';
+@import 'partials/animations';
+
+.marquee
+{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+}
+
+.txt
+{
+    flex-shrink: 0;
+    font-size: 150px;
+    animation: marquee 10s linear infinite;
+}

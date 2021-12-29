@@ -1,0 +1,11 @@
+{
+  "name": "29-footercomplexe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -watch styles/scss -o styles/css"
+  },
+  "author": "",
+  "license": "ISC"
+}
