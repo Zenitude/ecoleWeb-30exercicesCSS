@@ -23,7 +23,7 @@ class exercices
 
 // Création des exercices
 const exercice1 = new exercices('Exercice 1 : Alignement', ['01-Exercice_Alignement/alignement.html']);
-const exercice2 = new exercices('Exercice 2 : NavBar', ['02-Exercice_NavBar/navBar.html']);
+const exercice2 = new exercices('Exercice 2 : NavBar', ['02-Exercice_NavBar/navbar.html']);
 const exercice3 = new exercices('Exercice 3 : Section accueil', ['03-Exercice_SectionAccueil/sectionAccueil.html']);
 const exercice4 = new exercices('Exercice 4 : Positions', ['04-Exercice_Positions/positions_exo1.html', '04-Exercice_Positions/positions_exo2.html', '04-Exercice_Positions/positions_exo3.html', '04-Exercice_Positions/positions_exo4.html']);
 const exercice5 = new exercices('Exercice 5 : Display', ['05-Exercice_Display/display.html']);
